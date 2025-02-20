@@ -1,6 +1,10 @@
+using MvcNetCoreUtilidades.Helpers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSingleton<HelperPathProvider>();
+
 builder.Services.AddDistributedMemoryCache();
 
 builder.Services.AddControllersWithViews();
