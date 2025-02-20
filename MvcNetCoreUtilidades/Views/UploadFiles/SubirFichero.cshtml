@@ -1,2 +1,14 @@
 ﻿<h1>Subir Fichero</h1>
 
+<form method="post"
+	  enctype="multipart/form-data">
+	<label>Selecciona un fichero</label>
+	<input type="file" name="fichero" class="form-control" />
+	<button class="btn btn-info">
+		Subir fichero
+	</button>
+</form>
+
+<h2 style="color:red">@ViewData["MENSAJE"]</h2>
+
+<img src="~/uploads/tesla-rojo.jpg" style="width:450px; height:300px;" />
