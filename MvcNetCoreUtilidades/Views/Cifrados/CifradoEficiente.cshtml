@@ -1,0 +1,13 @@
+﻿<h1>Cifrado Eficiente</h1>
+
+<form method="post">
+	<label>Contenido a cifrar</label>
+	<input type="text" name="contenido" class="form-control" />
+	<label>Resultado cifrado</label>
+<textarea name="resultado" class="form-control" rows="5">@ViewData["TEXTOCIFRADO"]</textarea>
+	<button class="btn btn-info" name="accion" value="cifrar">Cifrar</button>
+	<button class="btn btn-warning" name="accion" value="comparar">Comparar cifrado</button>
+</form>
+
+<h2 style="color:blue">@ViewData["SALT"]</h2>
+<h2 style="color:green">@ViewData["MENSAJE"]</h2>
